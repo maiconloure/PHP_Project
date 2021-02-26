@@ -8,14 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    require "../autoload/autoload.php";
-    use App\Entity\Pessoa;
-
-    $user = new Pessoa($_POST['name'], $_POST['cpf'], $_POST['telefone'], $_POST['endereco']);
-     
-    $userData = $user->getUserData();
-    ?>
     <div>
         <h2><strong>Usuário</strong></h2>
         <table class="table table-dark">

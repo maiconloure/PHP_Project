@@ -13,7 +13,7 @@
     <strong>Bem vindo <?= $cadastrante; ?></strong>
   </span>
   <div class="form-main">
-    <form  action="views/finalizacao.php" method="post">
+    <form  action="finalizacao.php" method="post">
       <div class="form-group">
         <label for="exampleInputName1">Nome</label>
         <input type="name" name="name" class="form-control" id="exampleInputName1" required>
