@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style><?php include "style.css" ?></style>
-    <title>Document</title>
+    <title>Usuário</title>
 </head>
 <body>
     <div>
@@ -13,7 +13,6 @@
         <table class="table table-dark">
             <thead>
                 <tr>
-                <th scope="col">#</th>
                 <th scope="col">Nome</th>
                 <th scope="col">CPF</th>
                 <th scope="col">Telefone</th>
@@ -22,11 +21,10 @@
             </thead>
             <tbody>
                 <tr>
-                <th scope="row">1</th>
-                <td><?= $userData['nome']; ?></td>
-                <td><?= $userData['cpf']; ?></td>
-                <td><?= $userData['telefone']; ?></td>
-                <td><?= $userData['endereco']; ?></td>
+                <td><?= $user->getNome(); ?></td>
+                <td><?= $user->getCpf(); ?></td>
+                <td><?= $user->getTelefone(); ?></td>
+                <td><?= $user->getEndereco(); ?></td>
                 </tr>
             </tbody>
         </table>

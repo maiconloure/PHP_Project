@@ -20,15 +20,28 @@ class Pessoa
         $this->endereco = $endereco;
     }
 
-    public function getUserData(): array
+    public function __get(string $nomeDaPropriedade): string
     {
-        $userData = [
-            "nome" => $this->nome,
-            "cpf" => $this->cpf,
-            "telefone" => $this->telefone,
-            "endereco" => $this->endereco
-        ];
+        return "A propriedade não existe!";
+    }
 
-        return $userData;
+    public function getNome(): string
+    {
+        return $this->nome;
+    }
+
+    public function getCpf(): string
+    {
+        return $this->cpf;
+    }
+
+    public function getTelefone(): string
+    {
+        return $this->telefone;
+    }
+
+    public function getEndereco(): string
+    {
+        return $this->endereco;
     }
 }
